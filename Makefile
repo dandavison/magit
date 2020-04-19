@@ -1,6 +1,8 @@
 -include config.mk
 include default.mk
 
+export BUILD_MAGIT_LIBGIT=
+
 ## ###################################################################
 
 .PHONY: lisp \

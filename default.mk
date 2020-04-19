@@ -27,7 +27,7 @@ TAR      ?= tar
 SED      ?= sed
 
 EMACSBIN ?= emacs
-BATCH     = $(EMACSBIN) -Q --batch $(LOAD_PATH)
+BATCH     = $(EMACSBIN) -Q --eval "(package-initialize)" --batch $(LOAD_PATH)
 
 INSTALL_INFO     ?= $(shell command -v ginstall-info || printf install-info)
 MAKEINFO         ?= makeinfo
